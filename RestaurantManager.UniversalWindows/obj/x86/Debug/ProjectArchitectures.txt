@@ -1,0 +1,2 @@
+C:\Users\Lenovo\Documents\Edx\Microsoft DEV206.2x Designing Advanced Applications using XAML\hwstart\RestaurantManager.Models\RestaurantManager.Models.csproj;neutral
+C:\Users\Lenovo\Documents\Edx\Microsoft DEV206.2x Designing Advanced Applications using XAML\hwstart\RestaurantManager.UniversalWindows\RestaurantManager.UniversalWindows.csproj;x86
