@@ -22,7 +22,7 @@
     <AppXManifest Include="C:\Users\Lenovo\Documents\Edx\Microsoft DEV206.2x Designing Advanced Applications using XAML\hwstart\RestaurantManager.UniversalWindows\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-01-06T10:37:59.186</Modified>
+      <Modified>2016-01-07T13:34:04.396</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -49,7 +49,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Documents\Edx\Microsoft DEV206.2x Designing Advanced Applications using XAML\hwstart\RestaurantManager.UniversalWindows\bin\x86\Debug\Core\entrypoint\RestaurantManager.UniversalWindows.exe">
       <PackagePath>entrypoint\RestaurantManager.UniversalWindows.exe</PackagePath>
-      <Modified>2016-01-06T10:37:58.378</Modified>
+      <Modified>2016-01-07T13:34:03.160</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Documents\Edx\Microsoft DEV206.2x Designing Advanced Applications using XAML\hwstart\RestaurantManager.UniversalWindows\bin\x86\Debug\Core\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -69,11 +69,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Documents\Edx\Microsoft DEV206.2x Designing Advanced Applications using XAML\hwstart\RestaurantManager.UniversalWindows\bin\x86\Debug\Core\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-01-06T10:19:13.172</Modified>
+      <Modified>2016-01-07T13:34:03.952</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Documents\Edx\Microsoft DEV206.2x Designing Advanced Applications using XAML\hwstart\RestaurantManager.UniversalWindows\bin\x86\Debug\Core\RestaurantManager.Models.dll">
       <PackagePath>RestaurantManager.Models.dll</PackagePath>
-      <Modified>2016-01-06T10:37:55.827</Modified>
+      <Modified>2016-01-07T13:31:41.670</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Documents\Edx\Microsoft DEV206.2x Designing Advanced Applications using XAML\hwstart\RestaurantManager.UniversalWindows\bin\x86\Debug\Core\RestaurantManager.Models\Properties\RestaurantManager.Models.rd.xml">
       <PackagePath>RestaurantManager.Models\Properties\RestaurantManager.Models.rd.xml</PackagePath>
@@ -81,11 +81,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Documents\Edx\Microsoft DEV206.2x Designing Advanced Applications using XAML\hwstart\RestaurantManager.UniversalWindows\bin\x86\Debug\Core\RestaurantManager.UniversalWindows.exe">
       <PackagePath>RestaurantManager.UniversalWindows.exe</PackagePath>
-      <Modified>2016-01-06T10:37:59.183</Modified>
+      <Modified>2016-01-07T13:34:04.394</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Documents\Edx\Microsoft DEV206.2x Designing Advanced Applications using XAML\hwstart\RestaurantManager.UniversalWindows\bin\x86\Debug\Core\RestaurantManager.UniversalWindows.xr.xml">
       <PackagePath>RestaurantManager.UniversalWindows.xr.xml</PackagePath>
-      <Modified>2016-01-06T07:03:29.194</Modified>
+      <Modified>2016-01-07T13:34:02.966</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lenovo\Documents\Edx\Microsoft DEV206.2x Designing Advanced Applications using XAML\hwstart\RestaurantManager.UniversalWindows\bin\x86\Debug\Core\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
