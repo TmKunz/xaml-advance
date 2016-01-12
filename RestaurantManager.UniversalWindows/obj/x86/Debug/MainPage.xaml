@@ -5,8 +5,21 @@
     xmlns:local="using:RestaurantManager.UniversalWindows"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ext="using:RestaurantManager.Extensions"
+    xmlns:i="using:Microsoft.Xaml.Interactivity"
     mc:Ignorable="d">
+
+    <Page.Resources>
+        <ControlTemplate x:Key="ButtonTemplate">
+            <Border CornerRadius="15" Padding="10" Background="{TemplateBinding Background}">
+                <ContentPresenter />
+            </Border>
+        </ControlTemplate>
+    </Page.Resources>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <i:Interaction.Behaviors>
+            <ext:WarningRightTappedBehavior Message="Thank you for trying our demo app!" />
+        </i:Interaction.Behaviors>
         <Grid.RowDefinitions>
             <RowDefinition Height="0.40*" />
             <RowDefinition Height="0.10*" />
@@ -16,10 +29,10 @@
             <ColumnDefinition Width="0.50*" />
             <ColumnDefinition Width="0.50*" />
         </Grid.ColumnDefinitions>
-        <TextBlock Text="Restaurant Manager" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" />
-        <TextBlock Text="Internal Test Version" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" />
-        <Button x:ConnectionId='1' Content="Go to Orders View" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="0"                            />
-        <Button x:ConnectionId='2' Content="Submit Order" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1"                         />
+        <TextBlock Style="{StaticResource HeaderTextBlockStyle}" Text="Restaurant Manager" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" />
+        <TextBlock Style="{StaticResource SubheaderTextBlockStyle}" Text="Internal Test Version" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" />
+        <Button x:ConnectionId='1' Template="{StaticResource ButtonTemplate}" Content="Go to Orders View" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="0"                            />
+        <Button x:ConnectionId='2' Template="{StaticResource ButtonTemplate}" Content="Submit Order" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1"                         />
     </Grid>
 </Page>
 

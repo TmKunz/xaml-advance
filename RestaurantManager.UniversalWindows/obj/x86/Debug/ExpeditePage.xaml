@@ -4,9 +4,13 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:RestaurantManager.UniversalWindows"
     xmlns:models="using:RestaurantManager.Models"
+    xmlns:ext="using:RestaurantManager.Extensions"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <Page.Resources>
+        <ext:BooleanToColorConverter x:Key="BooleanToColorConverter" />
+    </Page.Resources>
     <Page.DataContext>
         <models:ExpediteDataManager />
     </Page.DataContext>
@@ -25,7 +29,41 @@
             <RowDefinition Height="0.85*"/>
             <RowDefinition Height="0.10*"/>
         </Grid.RowDefinitions>
-        <GridView Grid.Row="1" ItemsSource="{Binding OrderItems, Mode=OneWay}">
+        <GridView Grid.Row="1" ItemsSource="{Binding OrderItems}">
+            <GridView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Width="300">
+                        <Border Height="40" Padding="5" CornerRadius="10,10,0,0">
+                            <Border.Background>
+                                <SolidColorBrush Color="{Binding Expedite, Converter={StaticResource BooleanToColorConverter}}" />
+                            </Border.Background>
+                            <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center">
+                                <Run  Text="{Binding Table}" FontWeight="Bold" />
+                            </TextBlock>
+                        </Border>
+                        <Border Height="150" Padding="5" Background="Gray">
+                            <ListBox Background="SlateGray" ItemsSource="{Binding Items}" >
+                                <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Title}" />
+                                    </DataTemplate>
+                                </ListBox.ItemTemplate>
+                            </ListBox>
+                        </Border>
+                        <Border Height="50" Padding="5" Background="Gray">
+                            <TextBlock TextWrapping="Wrap">
+                                <Run Text="{Binding SpecialRequests}" FontStyle="Italic" />
+                            </TextBlock>
+                        </Border>
+                        <Border Padding="5" CornerRadius="0,0,10,10" >
+                            <Border.Background>
+                                <SolidColorBrush Color="{Binding Expedite, Converter={StaticResource BooleanToColorConverter}}" />
+                            </Border.Background>
+                            <Button Content="Delete" FontSize="16" HorizontalAlignment="Center" />
+                        </Border>
+                    </StackPanel>
+                </DataTemplate>
+            </GridView.ItemTemplate>
         </GridView>
         <Button Content="Clear All Orders" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" />
     </Grid>

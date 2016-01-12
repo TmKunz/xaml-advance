@@ -5,6 +5,8 @@
     xmlns:local="using:RestaurantManager.UniversalWindows"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ext="using:RestaurantManager.Extensions"
+    xmlns:i="using:Microsoft.Xaml.Interactivity"
     mc:Ignorable="d">
 
     <Page.Resources>
@@ -15,6 +17,9 @@
         </ControlTemplate>
     </Page.Resources>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <i:Interaction.Behaviors>
+            <ext:WarningRightTappedBehavior Message="Thank you for trying our demo app!" />
+        </i:Interaction.Behaviors>
         <Grid.RowDefinitions>
             <RowDefinition Height="0.40*" />
             <RowDefinition Height="0.10*" />

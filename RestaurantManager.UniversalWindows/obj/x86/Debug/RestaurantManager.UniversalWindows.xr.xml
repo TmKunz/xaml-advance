@@ -1,10 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
+  <Roots.Interfaces>
+    <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
+  </Roots.Interfaces>
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="OrderItems" />
+    <RootPropertyPathName Name="Expedite" />
     <RootPropertyPathName Name="SpecialRequests" />
-    <RootPropertyPathName Name="Table" />
+    <RootPropertyPathName Name="Items" />
     <RootPropertyPathName Name="Title" />
+    <RootPropertyPathName Name="Table" />
     <RootPropertyPathName Name="CurrentlySelectedMenuItems" />
     <RootPropertyPathName Name="MenuItems" />
   </Roots.PropertyPathNames>
@@ -27,12 +32,10 @@
     <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
       <RootProperty Name="FontSize" />
       <RootProperty Name="TextWrapping" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="Height" />
       <RootProperty Name="Inlines" />
-      <RootProperty Name="Style" />
       <RootProperty Name="Text" />
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Style" />
       <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Setter">
@@ -40,11 +43,12 @@
       <RootProperty Name="Value" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
+      <RootProperty Name="Resources" />
       <RootProperty Name="DataContext" />
       <RootProperty Name="TopAppBar" />
       <RootProperty Name="Content" />
-      <RootProperty Name="Resources" />
     </RootType>
+    <RootType FullName="RestaurantManager.Extensions.BooleanToColorConverter" />
     <RootType FullName="RestaurantManager.Models.ExpediteDataManager" />
     <RootType FullName="Windows.UI.Xaml.Controls.AppBar">
       <RootProperty Name="Content" />
@@ -75,11 +79,12 @@
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
+    <RootType FullName="Windows.UI.Xaml.Controls.GridView">
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="ItemTemplate" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Converter" />
       <RootProperty Name="Mode" />
       <RootProperty Name="UpdateSourceTrigger" />
     </RootType>
@@ -87,31 +92,46 @@
       <RootProperty Name="Template" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
-      <RootProperty Name="Orientation" />
+      <RootProperty Name="Width" />
       <RootProperty Name="Children" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Border">
+      <RootProperty Name="Height" />
       <RootProperty Name="Padding" />
       <RootProperty Name="CornerRadius" />
       <RootProperty Name="Background" />
       <RootProperty Name="Child" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
+      <RootProperty Name="Color" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Documents.Run">
       <RootProperty Name="Text" />
-      <RootProperty Name="FontWeight" />
       <RootProperty Name="FontStyle" />
+      <RootProperty Name="FontWeight" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
+      <RootProperty Name="Background" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ItemTemplate" />
+    </RootType>
     <RootType FullName="RestaurantManager.UniversalWindows.ExpeditePage" />
     <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">
       <RootProperty Name="Template" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.TemplateBindingExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.ContentPresenter" />
+    <RootType FullName="Microsoft.Xaml.Interactivity.Interaction">
+      <RootMethod Name="GetBehaviors" />
+      <RootMethod Name="SetBehaviors" />
+    </RootType>
+    <RootType FullName="RestaurantManager.Extensions.WarningRightTappedBehavior">
+      <RootProperty Name="Message" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />
     </RootType>
-    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="RestaurantManager.UniversalWindows.MainPage" />
     <RootType FullName="RestaurantManager.Models.OrderDataManager" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox" />
